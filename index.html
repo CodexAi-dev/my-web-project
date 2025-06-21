@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bioinformatics Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- DNA Background Animation -->
+
+     <div class="dna-animation">
+    <svg width="100%" height="100%" viewBox="0 0 1200 600">
+        <path id="dna-strand-1" d="M50,200 Q150,100 250,200 T450,200 T650,200 T850,200 T1050,200" 
+              stroke="#FF6B6B" stroke-width="3" fill="none" opacity="0.8"/>
+        <path id="dna-strand-2" d="M50,200 Q150,300 250,200 T450,200 T650,200 T850,200 T1050,200" 
+              stroke="#4ECDC4" stroke-width="3" fill="none" opacity="0.8"/>
+        
+        <g id="base-pairs">
+            <line x1="100" y1="150" x2="100" y2="250" stroke="#FFD93D" stroke-width="2" opacity="0.7"/>
+            <line x1="175" y1="200" x2="175" y2="200" stroke="#6BCF7F" stroke-width="2" opacity="0.7"/>
+            <line x1="250" y1="250" x2="250" y2="150" stroke="#FF6B6B" stroke-width="2" opacity="0.7"/>
+            <line x1="325" y1="200" x2="325" y2="200" stroke="#4ECDC4" stroke-width="2" opacity="0.7"/>
+            <line x1="400" y1="150" x2="400" y2="250" stroke="#FFD93D" stroke-width="2" opacity="0.7"/>
+            <line x1="475" y1="200" x2="475" y2="200" stroke="#6BCF7F" stroke-width="2" opacity="0.7"/>
+            <line x1="550" y1="250" x2="550" y2="150" stroke="#FF6B6B" stroke-width="2" opacity="0.7"/>
+            <line x1="625" y1="200" x2="625" y2="200" stroke="#4ECDC4" stroke-width="2" opacity="0.7"/>
+            <line x1="700" y1="150" x2="700" y2="250" stroke="#FFD93D" stroke-width="2" opacity="0.7"/>
+            <line x1="775" y1="200" x2="775" y2="200" stroke="#6BCF7F" stroke-width="2" opacity="0.7"/>
+            <line x1="850" y1="250" x2="850" y2="150" stroke="#FF6B6B" stroke-width="2" opacity="0.7"/>
+            <line x1="925" y1="200" x2="925" y2="200" stroke="#4ECDC4" stroke-width="2" opacity="0.7"/>
+            <line x1="1000" y1="150" x2="1000" y2="250" stroke="#FFD93D" stroke-width="2" opacity="0.7"/>
+        </g>
+        
+        <path id="dna-strand-3" d="M25,400 Q125,300 225,400 T425,400 T625,400 T825,400 T1025,400" 
+              stroke="#FF6B6B" stroke-width="2" fill="none" opacity="0.4"/>
+        <path id="dna-strand-4" d="M25,400 Q125,500 225,400 T425,400 T625,400 T825,400 T1025,400" 
+              stroke="#4ECDC4" stroke-width="2" fill="none" opacity="0.4"/>
+    </svg>
+</div>
+    <!-- Particle System -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">🧬 Bioinformatics Hub</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#core-areas">Core Areas</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+              <div class="search-box">
+    <input type="text" placeholder="Search..." id="siteSearch">
+    <button><i class="fas fa-search"></i></button>
+    
+  </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="section hero">
+            <div class="fade-in">
+                <h1>Bioinformatics Hub</h1>
+                <p>Unlocking Life Through Data Science</p>
+                <button class="cta-button">Explore the Future</button>
+            </div>
+            
+            <!-- DNA Visualization -->
+            <div class="dna-container">
+                <div class="dna-strand" id="dnaStrand"></div>
+            </div>
+        </section>
+
+       
+
+       <!-- Core Areas Section -->
+         <section id="core-areas" class="section">
+            <div class="fade-in">
+                <h2>🔬 Core Areas of Bioinformatics</h2>
+                <div class="core-areas-container">
+                    <div class="auto-rotate-toggle" id="autoRotateToggle">
+                        <i class="fas fa-play"></i> Auto Rotate
+                    </div>
+                    
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carouselTrack">
+                            <div class="card1">
+                                <div class="icon">🧬</div>
+                                <h3>Genomics 2050</h3>
+                                <p>Quantum-enhanced genome mapping and real-time genetic analysis. Complete genome sequencing in minutes with AI-powered function prediction.</p>
+                            </div>
+                            <div class="card1">
+                                <div class="icon">🔬</div>
+                                <h3>Proteomics</h3>
+                                <p>Holographic protein structure visualization and molecular dynamics simulation at the quantum level for drug design.</p>
+                            </div>
+                            <div class="card1">
+                                <div class="icon">📊</div>
+                                <h3>Transcriptomics</h3>
+                                <p>Real-time RNA sequencing with neural interface technology for live cellular behavior monitoring and analysis.</p>
+                            </div>
+                            <div class="card1">
+                                <div class="icon">💊</div>
+                                <h3>Drug Discovery</h3>
+                                <p>AI-accelerated drug discovery using quantum simulations and virtual reality molecular modeling systems.</p>
+                            </div>
+                            <div class="card1">
+                                <div class="icon">🔍</div>
+                                <h3>Sequence Alignment</h3>
+                                <p>Quantum-powered sequence comparison algorithms that identify evolutionary patterns across species in real-time.</p>
+                            </div>
+                            <div class="card1">
+                                <div class="icon">🗃️</div>
+                                <h3>Bio-Databases</h3>
+                                <p>Distributed quantum databases with instant global access: NCBI-Q, GenBank-Quantum, UniProt-Neural, and more.</p>
+                            </div>
+                            <div class="card1">
+                                <div class="icon">🧮</div>
+                                <h3>Systems Biology</h3>
+                                <p>Integrated computational modeling of complex biological systems, from molecular networks to entire ecosystems using AI.</p>
+                            </div>
+                            <div class="card1">
+                                <div class="icon">🎯</div>
+                                <h3>Metabolomics</h3>
+                                <p>Comprehensive analysis of cellular metabolites using quantum mass spectrometry and neural network pattern recognition.</p>
+                            </div>
+                            <div class="card1">
+                                <div class="icon">🧪</div>
+                                <h3>Structural Biology</h3>
+                                <p>3D protein folding prediction with quantum algorithms and molecular dynamics simulation for therapeutic design.</p>
+                            </div>
+                            <div class="card1">
+                                <div class="icon">📈</div>
+                                <h3>Phylogenetics</h3>
+                                <p>Evolutionary tree construction using machine learning to trace species relationships and predict future evolution.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation Controls -->
+                    <div class="carousel-nav">
+                        <button class="nav-btn" id="prevBtn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="nav-btn" id="nextBtn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Indicators -->
+                    <div class="carousel-indicators" id="indicators"></div>
+                </div>
+            </div>
+        </section>
+         <!-- About Section -->
+        <section id="about" class="section">
+            <div class="">
+                <h2>📖 About Bioinformatics</h2>
+                <p>Bioinformatics is a revolutionary scientific field that merges computer technology with biological research to decode the mysteries of life. We're at the forefront of understanding genetic information, disease mechanisms, and developing groundbreaking medical treatments.</p>
+                
+                <div class="grid" style="margin-top: 2rem;">
+                    <div class="card">
+                        <div class="icon">💾</div>
+                        <h3>Data Revolution</h3>
+                        <p>Advanced data collection and storage systems that handle petabytes of biological information with quantum-speed processing.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">🔍</div>
+                        <h3>Pattern AI</h3>
+                        <p>Next-generation AI algorithms that recognize complex biological patterns invisible to traditional analysis methods.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">🧠</div>
+                        <h3>Predictive Models</h3>
+                        <p>Sophisticated biological prediction modeling that forecasts cellular behavior and disease progression with unprecedented accuracy.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">🔬</div>
+                        <h3>Integrated Science</h3>
+                        <p>Seamless integration of biology, quantum computing, and advanced statistics for breakthrough discoveries.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Applications Section -->
+        <section id="applications" class="section">
+            <div class="fade-in">
+                <h2>🧪 Real-World Applications</h2>
+                <div class="grid">
+                    <div class="card">
+                        <div class="icon">👩‍⚕️</div>
+                        <h3>Precision Medicine</h3>
+                        <p>AI-powered personalized treatments, real-time cancer mutation tracking, and gene therapy optimization.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">🌾</div>
+                        <h3>Smart Agriculture</h3>
+                        <p>Climate-adapted crop engineering, bio-enhanced livestock, and sustainable food production systems.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">🌍</div>
+                        <h3>Environmental Genomics</h3>
+                        <p>Real-time ecosystem monitoring, biodiversity preservation, and climate change adaptation strategies.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">🧬</div>
+                        <h3>Evolutionary Biology</h3>
+                        <p>Time-travel genetic analysis, species origin mapping, and evolutionary prediction modeling.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">🦠</div>
+                        <h3>Global Health</h3>
+                        <p>Pandemic prediction systems, instant vaccine development, and global pathogen surveillance networks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Section -->
+        <section id="tools" class="section">
+            <div class="hologram fade-in">
+                <h2>🛠️ Next-Gen Tools & Technologies</h2>
+                <div class="grid">
+                    <div class="card">
+                        <div class="icon">🧰</div>
+                        <h3>Quantum Languages</h3>
+                        <p><strong>Python-Q</strong> - Quantum-enhanced data analysis<br>
+                        <strong>R-Neural</strong> - AI-powered statistical modeling<br>
+                        <strong>BioScript</strong> - Native bioinformatics programming</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">🧪</div>
+                        <h3>Advanced Tools</h3>
+                        <p><strong>BLAST-Quantum</strong> - Instant sequence search<br>
+                        <strong>ClustalAI</strong> - Neural network alignment<br>
+                        <strong>BioConductor-VR</strong> - Virtual reality genomics</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">🗄️</div>
+                        <h3>Quantum Databases</h3>
+                        <p><strong>GenBank-Q</strong> - Quantum DNA storage<br>
+                        <strong>UniProt-Neural</strong> - AI protein database<br>
+                        <strong>PDB-Hologram</strong> - 3D holographic structures</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Careers Section -->
+        <section id="careers" class="section">
+            <div class="fade-in">
+                <h2>💼 Careers in Bioinformatics 2050</h2>
+                <div class="grid">
+                    <div class="card">
+                        <div class="icon">🎯</div>
+                        <h3>Future Career Paths</h3>
+                        <p>• Quantum Bioinformatics Engineer<br>
+                        • Neural-Bio Interface Specialist<br>
+                        • Genomic AI Architect<br>
+                        • Precision Medicine Designer<br>
+                        • Bio-Quantum Researcher</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">⚡</div>
+                        <h3>Required Skills 2050</h3>
+                        <p>• Quantum computing proficiency<br>
+                        • Neural network programming<br>
+                        • Advanced molecular biology<br>
+                        • VR/AR development<br>
+                        • Bio-ethics and AI ethics</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="hologram fade-in">
+                <h2>📩 Connect with the Future</h2>
+                <p>Ready to join the bioinformatics revolution? Reach out to our quantum-enhanced team!</p>
+                <div class="contact-info">
+                    <div>📧 <span>info@bioinformaticshub.org</span></div>
+                    <div>📞 <span>+94-77 92 99 274</span></div>
+                    <div>🌐 <span>www.bioinformaticshub.org</span></div>
+                    <div>📍 <span>Kandy, Sri Lanka</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Bioinformatics Hub. Advancing Life Sciences Through Quantum Computing.</p>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
